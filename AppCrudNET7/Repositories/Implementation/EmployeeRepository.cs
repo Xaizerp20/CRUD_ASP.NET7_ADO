@@ -105,13 +105,13 @@ namespace AppCrudNET7.Repositories.Implementation
             }
         }
 
-        public async Task<bool> Delete(Employee model)
+        public async Task<bool> Delete(int idEmployee)
         {
             using (var connection = new SqlConnection(_stringSQL))
             {
                 connection.Open(); // Open the database connection
                 SqlCommand cmd = new SqlCommand("sp_DeleteEmployee", connection); // Create a command for a specific stored procedure
-                cmd.Parameters.AddWithValue("idEmployee", model.idEmployee);
+                cmd.Parameters.AddWithValue("idEmployee", idEmployee);
 
                 cmd.CommandType = CommandType.StoredProcedure; // Specify the command type as a stored procedure
 

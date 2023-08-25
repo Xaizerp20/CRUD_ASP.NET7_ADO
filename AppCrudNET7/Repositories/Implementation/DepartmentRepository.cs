@@ -60,7 +60,7 @@ namespace AppCrudNET7.Repositories.Implementation
         }
 
         //TODO: Method to delete a department (not implemented).
-        public Task<bool> Delete(Department model)
+        public Task<bool> Delete(int idDepartment)
         {
             throw new NotImplementedException();
         }
