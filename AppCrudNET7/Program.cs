@@ -1,3 +1,8 @@
+using AppCrudNET7.Models;
+using AppCrudNET7.Repositories.Contracts;
+using AppCrudNET7.Repositories.Implementation;
+
+
 namespace AppCrudNET7
 {
     public class Program
@@ -8,6 +13,17 @@ namespace AppCrudNET7
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
+
+
+
+            // Register the scoped service for accessing department-related data.
+            // Whenever an instance of IGenericRepository<Department> is required,
+            // an instance of DepartmentRepository will be provided within the scope
+            // of a single HTTP request. This allows the application to work with
+            // department operations using the functionality of DepartmentRepository.
+
+            builder.Services.AddScoped<IGenericRepository<Department>, DepartmentRepository>();
+            builder.Services.AddScoped<IGenericRepository<Employee>, EmployeeRepository>();
 
             var app = builder.Build();
 
