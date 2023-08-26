@@ -66,7 +66,7 @@ namespace AppCrudNET7.Repositories.Implementation
                 // Set parameter values for the stored procedure
                 cmd.Parameters.AddWithValue("fullName", model.fullName);
                 cmd.Parameters.AddWithValue("idDepartment", model.refDepartment.idDepartment);
-                cmd.Parameters.AddWithValue("salary", model.salary);
+                cmd.Parameters.AddWithValue("salart", model.salary);
                 cmd.Parameters.AddWithValue("dateContract", model.dateContract);
 
                 cmd.CommandType = CommandType.StoredProcedure; // Specify the command type as a stored procedure
@@ -92,7 +92,7 @@ namespace AppCrudNET7.Repositories.Implementation
                 cmd.Parameters.AddWithValue("idEmployee", model.idEmployee);
                 cmd.Parameters.AddWithValue("fullName", model.fullName);
                 cmd.Parameters.AddWithValue("idDepartment", model.refDepartment.idDepartment);
-                cmd.Parameters.AddWithValue("salary", model.salary);
+                cmd.Parameters.AddWithValue("salart", model.salary);
                 cmd.Parameters.AddWithValue("dateContract", model.dateContract);
                 cmd.CommandType = CommandType.StoredProcedure; // Specify the command type as a stored procedure'
 
