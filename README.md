@@ -12,8 +12,9 @@ Este proyecto es un ejemplo de una aplicación CRUD (Crear, Leer, Actualizar, El
 
 ## Capturas de Pantalla
 
-![Captura de Pantalla 1](screenshots/screenshot1.png)
-![Captura de Pantalla 2](screenshots/screenshot2.png)
+![Captura de Pantalla 1](Proyect_Imgs/CRUD_ASPNE7.jpg)
+![Captura de Pantalla 2](Proyect_Imgs/NEW_ASPNET7.jpg)
+![Captura de Pantalla 2](Proyect_Imgs/DELETE_ASPNET7.jpg)
 
 ## Instrucciones de Uso
 
